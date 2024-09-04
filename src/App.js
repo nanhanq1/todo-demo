@@ -5,8 +5,6 @@ import Todo from './Components/Todo';
 import Form from './Components/Form';
 import FilterButton from './Components/FilterButton';
 import { nanoid } from "nanoid";
-import OpenAI from "openai";
-
 
 const tasks = [
   { id: "todo-0", name: "Eat", completed: true },
@@ -30,11 +28,6 @@ function App() {
   const [filter, setFilter] = useState("All");
 
   let [editCount, setEditCount] = useState(0);
-
-  const openai = new OpenAI({
-    organization: "org-6f5f7TozKODWGZnODQOEb3ja",
-    project: "$PROJECT_ID",
-  });
 
   useEffect(() => {
     fetch("http://localhost:8080/todo/all")
