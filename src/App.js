@@ -11,7 +11,8 @@ import OpenAI from "openai";
 const tasks = [
   { id: "todo-0", name: "Eat", completed: true },
   { id: "todo-1", name: "Sleep", completed: false },
-  { id: "todo-2", name: "Reapeat", completed: false }
+  { id: "todo-2", name: "Reapeat", completed: false },
+  { id: "todo-3", name: "Rep", completed: false }
 ];
 
 const FILTER_MAP = {
